@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Chat UI</title>
+</head>
+
+<body class="gradient-bg flex items-center justify-center min-h-screen">
+
+  <div class="chat-window w-[600px] max-h-[95vh] rounded-3xl window-shadow overflow-hidden bg-white flex flex-col">
+
+    <!-- HEADER -->
+    <div class="bg-purple-700 text-white px-4 py-4 flex items-center gap-3">
+
+      <!-- Logo -->
+      <div class="w-10 h-10 flex items-center justify-center rounded-full logo-bg">
+        <svg width="34" height="34" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="48" fill="#6800A4"/>
+          <path d="M20 40 Q50 15 80 40 Q50 65 20 40" fill="white"/>
+          <rect x="38" y="38" width="24" height="10" rx="5" fill="#1A0A33"/>
+          <circle cx="45" cy="43" r="3" fill="#22E6FF"/>
+          <circle cx="55" cy="43" r="3" fill="#22E6FF"/>
+          <path d="M40 55 Q50 62 60 55 Q50 70 40 55" fill="white"/>
+          <circle cx="47" cy="60" r="2.5" fill="#1A0A33"/>
+          <circle cx="50" cy="62" r="2.5" fill="#1A0A33"/>
+          <circle cx="53" cx="60" r="2.5" fill="#1A0A33"/>
+        </svg>
+      </div>
+
+      <div>
+        <h2 class="font-semibold text-lg">Chatbot</h2>
+        <p class="text-green-300 flex items-center gap-1 text-sm">
+          <span class="w-2 h-2 rounded-full bg-green-400"></span> Online
+        </p>
+      </div>
+
+    </div>
+
+    <!-- CHAT AREA -->
+    <div class="chat-area p-4 space-y-4 bg-gray-50 flex-1 overflow-y-auto">
+
+      <!-- BOT BUBBLE 1 -->
+      <div class="flex items-start gap-2">
+        <!-- <div class="w-8 h-8 flex items-center justify-center rounded-full bg-purple-700">
+          <svg width="22" height="22" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="48" fill="#6800A4"/>
+            <path d="M20 40 Q50 15 80 40 Q50 65 20 40" fill="white"/>
+            <rect x="38" y="38" width="24" height="10" rx="5" fill="#1A0A33"/>
+            <circle cx="45" cy="43" r="3" fill="#22E6FF"/>
+            <circle cx="55" cy="43" r="3" fill="#22E6FF"/>
+          </svg>
+        </div> -->
+
+        <div>
+          <div class="bg-white p-3 rounded-xl shadow text-gray-700 text-sm">
+            Quels sont les documents nécessaires pour l’inscription ?
+          </div>
+          <p class="text-xs text-gray-400 pt-1">7:20 ✓</p>
+        </div>
+      </div>
+
+      <!-- BOT BUBBLE 2 (purple bubble) -->
+      <div class="flex items-start gap-2">
+        <div class="w-8 h-8 flex items-center justify-center rounded-full bg-purple-700">
+          <svg width="22" height="22" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="48" fill="#6800A4"/>
+            <path d="M20 40 Q50 15 80 40 Q50 65 20 40" fill="white"/>
+            <rect x="38" y="38" width="24" height="10" rx="5" fill="#1A0A33"/>
+            <circle cx="45" cy="43" r="3" fill="#22E6FF"/>
+            <circle cx="55" cy="43" r="3" fill="#22E6FF"/>
+          </svg>
+        </div>
+
+        <div>
+          <div class="p-4 rounded-xl text-sm text-white shadow bot-bubble-bg">
+           Les documents nécessaires sont : copie de la CIN, acte de naissance, baccalauréat, photos et formulaire d’inscription rempli.
+          </div>
+
+          <p class="text-xs text-gray-400 pt-1">7:20 ✓</p>
+        </div>
+      </div>
+
+      <!-- USER BUBBLE -->
+      <div class="flex items-start gap-2 justify-start">
+        <!-- <img src="https://i.pravatar.cc/40" class="w-8 h-8 rounded-full"> -->
+
+        <!-- <div>
+          <div class="bg-white p-3 rounded-xl shadow text-sm text-gray-700">
+            More no. of lines text and showing complete list of features like time stamp + check icon READ
+          </div>
+
+          <p class="text-xs text-gray-400 pt-1">7:20 ✓</p>
+        </div> -->
+      </div>
+
+    </div>
+
+    <!-- QUICK BUTTONS -->
+    <div class="px-4 py-2 flex gap-2 bg-white">
+
+      <button class="quick-btn text-xs flex gap-1 items-center px-3 py-1 rounded-full bg-gray-200 btn-transition">
+        💬 What is ChatBot?
+      </button>
+
+      <button class="quick-btn text-xs px-3 py-1 rounded-full bg-gray-200 btn-transition">
+        📄 FAQs
+      </button>
+
+    </div>
+
+    <!-- INPUT BAR -->
+    <div class="p-4 bg-gray-100 border-t flex items-center gap-3">
+      <input class="flex-1 px-4 py-3 rounded-2xl border border-gray-300 input-focus btn-transition"
+            placeholder="Type your message here..." />
+      <button class="p-3 rounded-full bg-purple-600 text-white shadow btn-transition hover:bg-purple-700">
+        ➤
+      </button>
+    </div>
+
+  </div>
+
+  <!-- <script src="script.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,35 @@
+[
+  {
+    "question": "Quelle est la date limite pour rendre les devoirs ?",
+    "response": "La date limite pour rendre les devoirs est généralement à 23h59 le jour indiqué par votre enseignant."
+  },
+  {
+    "question": "Comment accéder aux supports de cours ?",
+    "response": "Vous pouvez accéder aux supports de cours via la plateforme en ligne de l'université avec votre compte étudiant."
+  },
+  {
+    "question": "Où puis-je trouver les ressources de la bibliothèque ?",
+    "response": "Les ressources de la bibliothèque sont disponibles en ligne sur le site web de la bibliothèque et physiquement sur le campus."
+  },
+  {
+    "question": "Comment réinitialiser mon mot de passe du portail étudiant ?",
+    "response": "Pour réinitialiser votre mot de passe, rendez-vous sur la page de connexion du portail et cliquez sur 'Mot de passe oublié', puis suivez les instructions."
+  },
+  {
+    "question": "Qui contacter pour le conseil académique ?",
+    "response": "Vous pouvez contacter le bureau de conseil académique par email ou téléphone. Les coordonnées sont disponibles sur le site de l'université."
+  },
+  {
+    "question": "Comment s'inscrire aux cours ?",
+    "response": "L'inscription aux cours se fait en ligne via le portail étudiant pendant la période d'inscription annoncée par l'université."
+  },
+  {
+    "question": "Quel est le système de notation ?",
+    "response": "La plupart des universités utilisent des notes en lettres (A, B, C, D, F) ou en pourcentage. Consultez le syllabus de votre cours pour plus de détails."
+  },
+  {
+    "question": "Comment postuler pour des bourses d'études ?",
+    "response": "Les candidatures aux bourses se font généralement en ligne via le portail du bureau d'aide financière de l'université."
+  }
+]
+
