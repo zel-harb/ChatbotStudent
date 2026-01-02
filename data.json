@@ -30,6 +30,38 @@
   {
     "question": "Comment postuler pour des bourses d'études ?",
     "response": "Les candidatures aux bourses se font généralement en ligne via le portail du bureau d'aide financière de l'université."
+  },
+  {
+    "question": "Quelle est la date limite pour rendre les devoirs ?",
+    "response": "La date limite pour rendre les devoirs est fixée par l’enseignant. En général, elle est indiquée sur la plateforme pédagogique de l’établissement ou communiquée en classe."
+  },
+  {
+    "question": "Comment accéder aux supports de cours ?",
+    "response": "Les supports de cours sont disponibles via la plateforme numérique de l’école (ENT, Moodle, Google Classroom) ou remis directement par les enseignants."
+  },
+  {
+    "question": "Comment se déroulent les examens ?",
+    "response": "Les examens se déroulent généralement en présentiel, sous forme de contrôles continus et d’examens finaux. Le calendrier est affiché par l’administration pédagogique."
+  },
+  {
+    "question": "Comment s’inscrire ou se réinscrire à l’école ?",
+    "response": "L’inscription ou la réinscription se fait auprès de l’administration de l’établissement, soit en ligne soit sur place, selon les procédures de l’école."
+  },
+  {
+    "question": "Quels sont les documents nécessaires pour l’inscription ?",
+    "response": "Les documents demandés sont généralement : copie de la CIN, copie du baccalauréat, relevés de notes, photos d’identité, acte de naissance et dossier administratif."
+  },
+  {
+    "question": "Comment postuler pour une bourse d’études au Maroc ?",
+    "response": "La demande de bourse se fait via la plateforme de l’Office National des Œuvres Universitaires, Sociales et Culturelles (ONOUSC) pendant la période officielle."
+  },
+  {
+    "question": "Qui peut bénéficier d’une bourse universitaire ?",
+    "response": "Les bourses sont attribuées aux étudiants remplissant des critères sociaux et académiques définis par le ministère de l’Enseignement supérieur."
+  },
+  {
+    "question": "Où trouver les informations administratives importantes ?",
+    "response": "Les informations administratives sont disponibles au service de la scolarité, sur le site web de l’établissement ou via les tableaux d’affichage officiels."
   }
 ]
 
