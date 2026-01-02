@@ -1,0 +1,10 @@
+/* Global styles for the Angular app */
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  background: #0b1021;
+}
