@@ -1,0 +1,1 @@
+{"ast":null,"code":"\"use strict\";\n\nStudent;\nSupport;\nChatbot;","map":{"version":3,"names":["Student","Support","Chatbot"],"sources":["/home/zel-harb/Desktop/chatbot/frontend/src/main.ts"],"sourcesContent":["Student Support Chatbot"],"mappings":";;AAAAA,OAAO;AAACC,OAAO;AAACC,OAAO","ignoreList":[]},"metadata":{},"sourceType":"script","externalDependencies":[]}

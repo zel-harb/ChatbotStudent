@@ -8,16 +8,6 @@ from typing import Dict, List, Tuple
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 
-# Optional LangChain import: we try to use it if available, otherwise fall back to FAQ lookup.
-try:  # pragma: no cover - external dependency
-    from langchain.chat_models import ChatOpenAI
-    from langchain.prompts import ChatPromptTemplate
-
-    LANGCHAIN_AVAILABLE = True
-except Exception:  # pragma: no cover - handled gracefully
-    LANGCHAIN_AVAILABLE = False
-
-
 app = Flask(__name__)
 CORS(app)
 
@@ -48,34 +38,14 @@ def best_faq_match(message: str, faq: List[Dict[str, str]]) -> Tuple[str, float]
         if score > best_score:
             best_score = score
             best_answer = answer
+        # print(f"FAQ match score for '{question}': {score}")
     return best_answer, best_score
 
 
 def generate_reply(message: str, faq: List[Dict[str, str]]) -> str:
-    """Use LangChain + OpenAI if configured, otherwise fall back to FAQ lookup."""
-    # Fast path: heuristic FAQ match
-    fallback_answer, score = best_faq_match(message, faq)
-
-    # If LangChain is available and we have an API key, try a short LLM answer.
-    if LANGCHAIN_AVAILABLE and os.environ.get("OPENAI_API_KEY"):
-        try:
-            faq_text = "\n".join([f"Q: {item['question']}\nA: {item['response']}" for item in faq])
-            prompt = ChatPromptTemplate.from_template(
-                """Tu es un assistant académique pour les étudiants. Utilise la FAQ fournie pour répondre de façon concise.\n\nFAQ:\n{faq}\n\nQuestion: {question}\nRéponse en français:"""
-            )
-            model = ChatOpenAI(model="gpt-3.5-turbo", temperature=0.2)
-            messages = prompt.format_messages(question=message, faq=faq_text)
-            response = model(messages)
-            content = getattr(response, "content", "").strip()
-            if content:
-                return content
-        except Exception as exc:  # pragma: no cover - logging only
-            print(f"LangChain/OpenAI fallback triggered: {exc}")
-
-    # Fallback to heuristic answer
-    return fallback_answer
-
-
+    """Match user message with FAQ entries."""
+    answer, score = best_faq_match(message, faq)
+    return answer
 @app.post("/chat")
 def chat() -> tuple:
     payload = request.get_json(silent=True) or {}
